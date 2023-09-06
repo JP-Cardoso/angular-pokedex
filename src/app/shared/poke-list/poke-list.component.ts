@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./poke-list.component.scss']
 })
 export class PokeListComponent {
-
+  public readonly pokemonImage: string = "../../../assets/pokemon/pokemon.png";
 }
