@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class PokeSearchComponent {
 
+  public readonly searchIcon: string = "../../../assets/icons/search.svg";
+
+  constructor() {
+
+  }
 }

@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class PokeHeaderComponent {
 
+  public readonly logo:string = "assets/logo/logo.svg";
+  
 }
