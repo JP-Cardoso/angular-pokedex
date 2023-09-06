@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-poke-search',
@@ -7,9 +7,13 @@ import { Component } from '@angular/core';
 })
 export class PokeSearchComponent {
 
+  //Enviando para fora do módulo
+  @Output() public emmitSearch: EventEmitter<string> = new EventEmitter();
   public readonly searchIcon: string = "../../../assets/icons/search.svg";
 
-  constructor() {
+  constructor() {}
 
+  public search(value: string): void {
+    this.emmitSearch.emit(value)    
   }
 }
